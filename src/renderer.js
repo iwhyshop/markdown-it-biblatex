@@ -40,7 +40,7 @@ function renderer(context) {
 
     let citation = `<span id="${citeId}" class="citation">${citationCluster[1][0][1]}</span>`;
     if (linkToBibliography === true) {
-      citation = `<a href="#bib-${bibRef}">${citation}</a>`;
+      citation = `<a href="#bib-${bibRef}" title="${bibliographyTitle}">${citation}</a>`;
     }
 
     return citation;
